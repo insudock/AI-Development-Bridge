@@ -1,0 +1,17 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "ai-development-bridge",
+  "main": "worker.mjs",
+  "compatibility_date": "2026-11-06",
+  "account_id": "c29fa4da39557f241d4f267aa32359c6",
+  "workers_dev": true,
+  "d1_databases": [{
+    "binding": "AUTH_DB",
+    "database_name": "ai-development-bridge-auth",
+    "database_id": "7f306472-416a-4030-b643-458ae1170e66"
+  }],
+  "vars": {
+    "ROUTINE_FIRE_URL": "https://api.anthropic.com/v1/claude_code/routines/trig_01BQG8fGee5zMKP4n5dkJHnj/fire"
+  },
+  "observability": { "enabled": false }
+}
